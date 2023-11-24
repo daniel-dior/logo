@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: white;
+    background-color: black;
+  }
+  .heading {
+    position: absolute;
+   color: aquamarine;
+    text-align: center;
+    z-index: 10;
+  }
+  .img {
+    width: 100%;
+  }
+  .hold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+  }
+  .hold img {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+  }
+  .positions {
+    background-color: black;
+     margin: 0;
+      padding: 5px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .positions a {
+      color: yellow;
+      text-decoration: none;
+  
+    }
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    .overlay-content {
+      position: relative;
+      top: 0;
+      width: inherit;
+      text-align: center;
+      margin-top: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .overlay:hover {
+      color: aqua;
+    }
+    .close {
+    color: red; 
+    font-size: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    }
+    .close:hover {
+      color: aqua;
+    }
+    .overlay a {
+      padding: 8px;
+      scroll-padding-top: -20px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      color: yellow;
+      padding-bottom: 20px;
+    }
+    .overlay a:hover , a:focus {
+      color: red;
+    }
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+    }
+    .open a {
+      color: white;
+      text-decoration: none;
+    }
+    .open a:hover, a:active {
+      color: aqua;
+    }
+    .java {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
+    .java, .open {
+      display: none;
+    }
+    .navbar1 {
+      display: flex;
+      justify-content: space-around;
+    }
+    .navbar1 a:hover {
+      color: red;
+      transition: 1s;
+    }
+    .navbar {
+      display: none;
+    }
+  
+    .login {
+      cursor: pointer;
+    }
+    .logo {
+      cursor: pointer;
+      font-weight: bolder;
+      color: aqua;
+      border: 1px solid red;
+      padding:0 10px;
+    }
+    .logo:hover {
+      transition: 1s;
+      color: red;
+      background-color: blue;
+    }
+    button {
+      padding: 7px;
+      background-color: red;
+      cursor: pointer;
+      font-weight: bold;
+  
+    }
+
+      .flex img {
+        width: 100%;
+      padding: 10px;
+      display: flex;
+      flex: 30%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      opacity: 0.3;
+      cursor: pointer;
+    }
+    .flex img:hover {
+      opacity: 0.9;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .view {
+      background-color: gray;
+      padding: 15px;
+      width: 300px;
+      border-radius: 50px;
+      text-align: center; 
+      margin: 50px;
+    }
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .view a {
+      text-decoration: none;
+      color: white;
+    }
+    .view:hover {
+      background-color: aqua;
+      width: 400px;
+      transition: 2s;
+    }
+    .clas {
+      background-color: aqua;
+      width: 100px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      opacity: 0.7;
+      height: 25px;
+    }
+    .clas img:hover {
+      opacity: 0.5;
+      background-color: white;
+    }
+    .clas img {
+      width: 20px;
+    }
+    @media screen and (min-width:1200px) {
+      .navbar {
+        display: block;
+        position: sticky;
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 250px;
+        border-right: 1px solid aqua;
+        background-color: black;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    .navbar img {
+        width: 100%;
+        align-content: center;
+    }
+      .navbar li a {
+        display: block;
+        color: yellow;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      .navbar li a:hover {
+        color: red;
+        transition: 1s;
+      }
+      .actives {
+        background-color:black;
+        color: white;
+      }
+      
+    .navbar li:hover {
+      background-color: black;
+    }
+    .positions {
+      display: none;
+    }
+    .border {
+      margin-left: 300px;
+    }
+    .logo {
+      text-align: center;
+      padding: 20px;
+    }
+    .login {
+      text-align: center;
+    }
+    }
+    @media screen and (max-width:500px) {
+      .java {
+        display: none;
+      }
+      .navbar1 {
+        display: none;
+      }
+      .display {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      div a, .dropbtn {
+        padding: 14px 16px;
+      }
+      .dropdown-content {
+        margin-right: 100px;
+        width: 120px;
+      }
+      .her {
+        display: none;
+      }
+      .heading {
+        font-size: 10px;
+        width: 200px;
+      }
+      .form {
+        display: none;
+      }
+      .hold {
+        margin-bottom: 50px;
+      }
+      .view {
+        padding: 0;
+      }
+    }
+      

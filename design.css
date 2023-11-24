@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+  }
+  .border {
+    margin: 15px;
+  }
+  .link {
+    margin-right: 15px;
+  }
+  body {
+    color: white;
+    background-color: black;
+  }
+  .positions {
+    background-color: black;
+    margin: 0;
+    padding: 5px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .positions a {
+      color: yellow;
+      text-decoration: none;
+  
+    }
+    .navbar1 {
+      display: flex;
+      justify-content: space-around;
+    }
+    .navbar1 a:hover {
+      color: red;
+      transition: 1s;
+    }
+
+    .navbar {
+      display: none;
+    }
+  
+    .login {
+      cursor: pointer;
+    }
+    .logo {
+      cursor: pointer;
+      font-weight: bolder;
+      color: aqua;
+      border: 1px solid red;
+      padding:0 10px;
+    }
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow: hidden;
+      transition: 0.5s;
+  }
+  .overlay-content {
+      position: relative;
+      top: 0;
+      width: inherit;
+      text-align: center;
+      margin-top: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+  .overlay:hover {
+      color: aqua;
+  }
+  .close {
+   color: red; 
+   font-size: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .close:hover {
+      color: aqua;
+    }
+  .overlay a {
+      padding: 8px;
+      scroll-padding-top: -20px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      color: yellow;
+      padding-bottom: 20px;
+    }
+  .overlay a:hover , a:focus {
+      color: red;
+    }
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+  }
+  .open a {
+    color: white;
+      text-decoration: none;
+  }
+  .open a:hover, a:active {
+      color: aqua;
+  }
+    .logo:hover {
+      transition: 1s;
+      color: red;
+      background-color: blue;
+    }
+    .heading h1 {
+      color: aqua;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .heading {
+      margin: 100px;
+    }
+    .heading p {
+      color: yellow;
+      font-size: 20px;
+      width: 500px;
+    }
+    .form {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .flex {
+      border: 1px solid aqua;
+      display: flex;
+      gap: 30px;
+      height: 350px;
+    }
+    .star {
+      margin-top: 10px;
+      display: flex;
+      gap: 50px;
+    }
+    .color {
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 10px;
+      margin-top: 100px;
+      background-color: red;
+      text-align: center;
+      cursor: pointer;
+    }
+    .colors {
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 10px;
+      margin-top: 30px;
+      background-color:wheat;
+      color: black;
+      text-align: center;
+      cursor: pointer;
+    }
+    .color:hover {
+      background-color: aqua;
+    }
+    .colors:hover {
+      background-color: white;
+    }
+    button a{
+      text-decoration: none;
+      color: aqua;
+    }
+    button  {
+      padding: 7px;
+      background-color: red;
+    }
+    .clas {
+      background-color: aqua;
+      width: 100px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      opacity: 0.7;
+      height: 25px;
+    }
+    .clas img:hover {
+      opacity: 0.5;
+      background-color: white;
+    }
+    .clas img {
+      width: 20px;
+    }
+    
+      .grid {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        border: 1px solid aqua;
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .display {
+      display: none;
+    }
+    .grid h3 {
+      font-size: 25px;
+    }
+    .grid p {
+      font-size: 15px;
+      text-align: left;
+    }
+    .grid img {
+      width: 100%;
+    }
+    .grid .star {
+      justify-content: space-between;
+    }
+    
+    @media screen and (min-width:1200px) {
+      .navbar {
+        display: block;
+        position: sticky;
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 250px;
+        border-right: 1px solid aqua;
+        background-color: black;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+    .navbar img {
+        width: 100%;
+        align-content: center;
+    }
+      .navbar li a {
+        display: block;
+        color: yellow;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      .navbar li a:hover {
+        color: red;
+        transition: 1s;
+      }
+      .actives {
+        background-color:black;
+        color: white;
+      }
+      
+    .navbar li:hover {
+      background-color: black;
+    }
+    .positions {
+      display: none;
+    }
+    .border {
+      margin-left: 300px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .logo {
+      text-align: center;
+      padding: 20px;
+    }
+    .login {
+      text-align: center;
+    }
+    .heading {
+      display: flex;
+      margin: 50px 20px;
+    }
+    .heading h1 {
+      width: 100%;
+    }
+    .heading p {
+      width: 100%;
+    }
+  .flex {
+    width: 900px;
+}
+    .middle {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .video {
+      width: 130%;
+    }
+    }
+    @media screen and (max-width:500px) {
+      .navbar1 {
+        display: none;
+      }
+      .display {
+        display: block;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        justify-content: space-between;
+      }
+      .positions {
+        display: none;
+      }
+      .her {
+        display: none;
+      }
+        form {
+          display: none;
+        }
+      .heading h1 {
+        font-size: 35px;
+        max-width: fit-content;
+        margin: -65px;
+      }
+      .heading p {
+        width: 100%;
+      }
+      .flex {
+        display: none;
+      }
+      .grid {
+        display: block;
+      }
+      .border {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+      

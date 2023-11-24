@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+}
+body {
+    background-color: black;
+    color: white;
+}
+form {
+  margin: 20px;
+}
+.positions {
+    background-color: black;
+     margin: 0;
+      padding: 5px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .positions a {
+      color: yellow;
+      text-decoration: none;
+  
+    }
+    .navbar1 {
+      display: flex;
+      justify-content: space-around;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar1 a:hover {
+      color: red;
+      transition: 1s;
+    }
+    .login {
+        cursor: pointer;
+        color: white;
+      }
+      .logo {
+        cursor: pointer;
+        font-weight: bolder;
+        color: aqua;
+        border: 1px solid red;
+        padding:0 10px;
+      }
+      .logo:hover {
+        transition: 1s;
+        color: red;
+        background-color: blue;
+      }
+      .heading h1 {
+        font-size: 70px;
+        font-family: d;
+      }
+      .heading p {
+        font-size: 30px;
+      }
+      .heading {
+        position: absolute;
+       color: rgb(212, 216, 215);
+        text-align: center;
+        z-index: 10;
+        padding: 400px 0;
+      }
+      .hold img {
+        width: 100%;
+      }
+      .hold {
+        display: flex;
+        justify-content: center;
+      }
+      .display {
+        display: none;
+      }
+      .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .overlay-content {
+        position: relative;
+        top: 0;
+        width: inherit;
+        text-align: center;
+        margin-top: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .overlay:hover {
+        color: aqua;
+    }
+    .close {
+     color: red; 
+     font-size: 60px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .close:hover {
+        color: aqua;
+    }
+    .overlay a {
+        padding: 8px;
+        scroll-padding-top: -20px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        color: yellow;
+        padding-bottom: 20px;
+    }
+    .overlay a:hover , a:focus {
+        color:red;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+    }
+    .open a {
+        color: white;
+        text-decoration: none;
+    }
+    .open a:hover, a:active {
+        color: aqua;
+    }
+    .java {
+      display: none;
+    }
+      .icon img {
+        width: 50px;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+      }
+      .icon2 {
+        display: flex;
+        align-items: center;
+      }
+      .icon2 img {
+        width: 50px;
+      }
+      .icon3 img {
+        width: 50px;
+      }
+      .icon3 {
+        display: flex;
+        align-items: center;
+      }
+      @media screen and (min-width:1200px) {
+        .navbar {
+          display: block;
+          position: sticky;
+          position: relative;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 250px;
+          border-right: 1px solid aqua;
+          background-color: black;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+      }
+      .navbar img {
+          width: 100%;
+          align-content: center;
+      }
+        .navbar li a {
+          display: block;
+          color: yellow;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+        .navbar li a:hover {
+          color: red;
+          transition: 1s;
+        }
+        .actives {
+          background-color:black;
+          color: white;
+        }
+        
+      .navbar li:hover {
+        background-color: black;
+      }
+      .positions {
+        display: none;
+      }
+      .border {
+        margin-left: 300px;
+      }
+      .logo {
+        text-align: center;
+        padding: 20px;
+      }
+      .login {
+        text-align: center;
+      }
+      }
+      @media screen and (max-width:500px) {
+        .java {
+          display: block;
+        }
+        
+        .navbar1 {
+          display: none;
+        }
+        .display {
+          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: sticky;
+          top: 0;
+          background-color: black;
+        }
+        .her {
+          display: none;
+        }
+        .heading h1 {
+          font-size: 25px;
+        }
+
+        }
+        .heading {
+          padding: 170px 0;
+          position:absolute;
+          display: none;
+        }
+
+      }
